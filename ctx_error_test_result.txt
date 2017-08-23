@@ -1,0 +1,38 @@
+Go 1.8:
+BenchmarkCtx_Select-4                   200000000                7.98 ns/op
+BenchmarkCtx_Error-4                    1000000000               2.48 ns/op
+BenchmarkCtx_SelectVal-4                200000000               10.1 ns/op
+BenchmarkCtx_ErrorVal-4                 300000000                5.19 ns/op
+BenchmarkCtx_SelectWithCanceled-4       50000000                29.8 ns/op
+BenchmarkCtx_ErrorWithCacneled-4        30000000                57.7 ns/op
+BenchmarkCtx_SelectWithTimeout-4        100000000               18.4 ns/op
+BenchmarkCtx_ErrorWithTimeout-4         30000000                59.8 ns/op
+
+BenchmarkCtx_Select                     200000000                7.55 ns/op
+BenchmarkCtx_Error                      1000000000               2.46 ns/op
+BenchmarkCtx_SelectVal                  100000000               10.1 ns/op
+BenchmarkCtx_ErrorVal                   300000000                4.93 ns/op
+BenchmarkCtx_SelectWithCanceled         50000000                29.8 ns/op
+BenchmarkCtx_ErrorWithCacneled          20000000                55.4 ns/op
+BenchmarkCtx_SelectWithTimeout          100000000               17.7 ns/op
+BenchmarkCtx_ErrorWithTimeout           30000000                58.6 ns/op
+
+
+Go 1.9rc2:
+BenchmarkCtx_Select-4                   200000000                6.85 ns/op
+BenchmarkCtx_Error-4                    1000000000               2.61 ns/op
+BenchmarkCtx_SelectVal-4                200000000                8.95 ns/op
+BenchmarkCtx_ErrorVal-4                 300000000                5.39 ns/op
+BenchmarkCtx_SelectWithCanceled-4       30000000                51.2 ns/op
+BenchmarkCtx_ErrorWithCacneled-4        30000000                55.3 ns/op
+BenchmarkCtx_SelectWithTimeout-4        50000000                43.0 ns/op
+BenchmarkCtx_ErrorWithTimeout-4         20000000                59.5 ns/op
+
+BenchmarkCtx_Select                     200000000                6.88 ns/op
+BenchmarkCtx_Error                      1000000000               2.49 ns/op
+BenchmarkCtx_SelectVal                  200000000                8.73 ns/op
+BenchmarkCtx_ErrorVal                   300000000                5.34 ns/op
+BenchmarkCtx_SelectWithCanceled         30000000                49.1 ns/op
+BenchmarkCtx_ErrorWithCacneled          30000000                57.6 ns/op
+BenchmarkCtx_SelectWithTimeout          50000000                40.0 ns/op
+BenchmarkCtx_ErrorWithTimeout           20000000                59.2 ns/op
