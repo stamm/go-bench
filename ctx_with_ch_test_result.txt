@@ -1,0 +1,14 @@
+Go 1.8:
+BenchmarkCtxWithCh_Select-4      5000000               244 ns/op
+BenchmarkCtxWithCh_BufChan-4     5000000               248 ns/op
+
+BenchmarkCtxWithCh_Select        5000000               244 ns/op
+BenchmarkCtxWithCh_BufChan       5000000               249 ns/op
+
+
+Go 1.9:
+BenchmarkCtxWithCh_Select-4      5000000               213 ns/op
+BenchmarkCtxWithCh_BufChan-4     5000000               217 ns/op
+
+BenchmarkCtxWithCh_Select        5000000               218 ns/op
+BenchmarkCtxWithCh_BufChan       5000000               218 ns/op
